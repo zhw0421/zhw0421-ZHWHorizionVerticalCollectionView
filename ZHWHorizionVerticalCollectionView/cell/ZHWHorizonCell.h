@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ZHWBaseModel.h"
+#import "ZHWHorizionCellProtocol.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZHWHorizonCell : UICollectionViewCell
+@interface ZHWHorizonCell : UICollectionViewCell <ZHWHorizionCellProtocol>
 
 @property (nonatomic, strong) NSMutableArray *horizionDataArr;
 

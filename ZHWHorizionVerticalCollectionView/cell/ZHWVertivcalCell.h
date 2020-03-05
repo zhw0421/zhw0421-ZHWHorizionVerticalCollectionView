@@ -9,9 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "ZHWHorizionModel.h"
+#import "ZHWVerticalCellDelegate.h"
+#import "ZHWHorizonCell.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHWVertivcalCell : UICollectionViewCell
+
+@property (nonatomic, weak) id<ZHWVerticalCellDelegate> delegate;
 
 @property (nonatomic, strong) UICollectionView *horizontalCollectionView;
 
@@ -19,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)fillZHWVertivcalCell:(ZHWHorizionModel *)hModel;
 
+- (ZHWHorizonCell *)currentHorizontalCell;
 @end
 
 NS_ASSUME_NONNULL_END

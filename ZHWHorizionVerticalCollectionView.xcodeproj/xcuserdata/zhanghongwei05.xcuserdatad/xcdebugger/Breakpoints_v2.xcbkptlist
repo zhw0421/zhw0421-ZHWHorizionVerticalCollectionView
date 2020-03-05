@@ -14,8 +14,8 @@
             filePath = "ZHWHorizionVerticalCollectionView/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "ZHWHorizionVerticalCollectionView/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "-initData"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "ZHWHorizionVerticalCollectionView/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "-initData"
             landmarkType = "7">
          </BreakpointContent>
@@ -73,9 +73,9 @@
             filePath = "ZHWHorizionVerticalCollectionView/cell/ZHWVertivcalCell.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "-fillZHWVertivcalCell:"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "-currentHorizontalCell"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,9 +89,9 @@
             filePath = "ZHWHorizionVerticalCollectionView/cell/ZHWVertivcalCell.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "-fillZHWVertivcalCell:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,9 +105,9 @@
             filePath = "ZHWHorizionVerticalCollectionView/cell/ZHWVertivcalCell.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "-fillZHWVertivcalCell:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -121,10 +121,10 @@
             filePath = "ZHWHorizionVerticalCollectionView/cell/ZHWVertivcalCell.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "-collectionView:numberOfItemsInSection:"
-            landmarkType = "7">
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "ZHWVertivcalCell"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -137,9 +137,9 @@
             filePath = "ZHWHorizionVerticalCollectionView/cell/ZHWVertivcalCell.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "-numberOfSectionsInCollectionView:"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-fillZHWVertivcalCell:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

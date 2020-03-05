@@ -7,7 +7,7 @@
 //
 
 #import "ZHWVertivcalCell.h"
-#import "ZHWHorizonCell.h"
+
 #define FMT_SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 
 #define FMT_SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
@@ -50,13 +50,27 @@ UICollectionViewDataSource>
 -(void)scrollViewDidEndScroll{
     NSIndexPath *indexPath = [self.horizontalCollectionView indexPathForCell:[self currentHorizontalCell]];
     self.hModel.currentIndex = indexPath.row;
+    if (self.delegate) {
+        [self.delegate verticalCellScrollViewDidEndScroll:indexPath horizontalCollectionView:[self currentHorizontalCell]];
+    }
 }
 
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(verticalCellscrollViewWillBeginDragging:)]) {
+        [self.delegate verticalCellscrollViewWillBeginDragging:scrollView];
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self.delegate verticalCellScrollViewDidScroll:scrollView];
+}
+
+
 //获取当前选中的Cell
-- (ZHWHorizionModel *)currentHorizontalCell {
+- (ZHWHorizonCell *)currentHorizontalCell {
     CGPoint centerPoint = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
     NSArray * cells = [self.horizontalCollectionView visibleCells];
-    ZHWHorizionModel *horizontalCell;
+    ZHWHorizonCell *horizontalCell;
     for (ZHWHorizonCell *cell  in cells) {
         CGRect frame = [self.horizontalCollectionView convertRect:cell.frame toView:[self.horizontalCollectionView superview]];
         if (CGRectContainsPoint(frame, centerPoint)) {
@@ -65,7 +79,7 @@ UICollectionViewDataSource>
         }
     }
     if (!horizontalCell) {
-        horizontalCell = (ZHWHorizionModel *)[self.horizontalCollectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.hModel.currentIndex inSection:0]];
+        horizontalCell = (ZHWHorizonCell *)[self.horizontalCollectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.hModel.currentIndex inSection:0]];
     }
     return horizontalCell;
 }

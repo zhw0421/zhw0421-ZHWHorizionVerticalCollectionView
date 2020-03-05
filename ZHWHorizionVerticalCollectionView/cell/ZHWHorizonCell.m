@@ -44,7 +44,14 @@
     return _horizionDataArr;
 }
 
+- (void)cellDidAppear{
+    //当前显示Cell应该执行的操作
+    NSLog(@"zhw cellDidAppear");
+}
 
-
+- (void)cellDidDisappear{
+    //刚刚消失的Cell应该执行的操作
+    NSLog(@"zhw cellDidDisappear");
+}
 
 @end

@@ -66,6 +66,8 @@
 		BF4AD53723FA3C4F004C9EE0 /* ZHWHorizonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHWHorizonCell.m; sourceTree = "<group>"; };
 		BF4AD53923FA4A20004C9EE0 /* ZHWHorizionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHWHorizionModel.h; sourceTree = "<group>"; };
 		BF4AD53A23FA4A20004C9EE0 /* ZHWHorizionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHWHorizionModel.m; sourceTree = "<group>"; };
+		BFFA0C342410F62200940825 /* ZHWVerticalCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHWVerticalCellDelegate.h; sourceTree = "<group>"; };
+		BFFA0C352410F81000940825 /* ZHWHorizionCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHWHorizionCellProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		BF4AD4F723FA37A9004C9EE0 /* ZHWHorizionVerticalCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				BFFA0C332410F5CB00940825 /* Protocal */,
 				BF4AD52F23FA38D4004C9EE0 /* model */,
 				BF4AD52E23FA38C6004C9EE0 /* view */,
 				BF4AD52D23FA38B9004C9EE0 /* cell */,
@@ -179,6 +182,15 @@
 				BF4AD53A23FA4A20004C9EE0 /* ZHWHorizionModel.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		BFFA0C332410F5CB00940825 /* Protocal */ = {
+			isa = PBXGroup;
+			children = (
+				BFFA0C342410F62200940825 /* ZHWVerticalCellDelegate.h */,
+				BFFA0C352410F81000940825 /* ZHWHorizionCellProtocol.h */,
+			);
+			path = Protocal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
